@@ -3377,7 +3377,7 @@ input[type="button"].btn-block {
 }
 .collapse {
   display: none;
-  visibility: hidden;
+  /* visibility: hidden; */
 }
 .collapse.in {
   display: block;
