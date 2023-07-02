@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+  <style>
+    body {
+      background-image:url(../images/pink/bb.jpg);
+    }
+  </style>
+</head>
+<body>
+  <!-- Intro -->
+  <div id="audio">
+    <button id="btnReproducir">Reproducir sonido</button>
+    <button id="btnPausar">Pausar sonido</button>
+    <button id="btnReiniciar">Ir a inicio de sonido</button>
+  </div>
+  <!-- JQuery -->
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script lang="javascript">
+    (() => {
+      /*Audio BG */
+      const cargarSonido = function (fuente) {
+        const sonido = document.createElement("audio");
+        sonido.src = fuente;
+        sonido.setAttribute("preload", "auto");
+        sonido.setAttribute("controls", "none");
+        sonido.style.display = "none"; // <-- oculto
+        document.body.appendChild(sonido);
+        return sonido;
+      };
+      const $botonReproducir = document.querySelector("#btnReproducir"),
+        $botonPausar = document.querySelector("#btnPausar"),
+        $botonReiniciar = document.querySelector("#btnReiniciar");
+      // El sonido que podemos reproducir o pausar
+      const sonido = cargarSonido("./audio/intro.mp3");
+      (() => {
+        sonido.play();
+      })()
+      $botonReproducir.onclick = () => {
+        sonido.play();
+      };
+      $botonPausar.onclick = () => {
+        sonido.pause();
+      };
+      $botonReiniciar.onclick = () => {
+        sonido.currentTime = 0;
+      };
+    })()
+  </script>
+</body>
+</html>

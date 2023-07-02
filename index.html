@@ -1,494 +1,569 @@
 ﻿<!DOCTYPE html>
 <html lang="ru">
+
 <head>
-<meta charset="utf-8">
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-<title>Ricardo & Sally</title>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Ricardo & Sally</title>
 
-<!-- Bootstrap CSS -->
-<link href="css/bootstrap.css" rel="stylesheet">
-<link href="css/bootstrap-theme.css" rel="stylesheet">
-<!-- Font Awesome CSS -->
-<!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-MxVzx5YTL6X7Zc3WhUMlWZuPP1NfAN+w2K+7R3CwLP9dzjBrjTnZlOzrNtvwfqRt" crossorigin="anonymous">
-<!-- Flaticon CSS -->
-<link href="css/flaticon/flaticon.css" rel="stylesheet">
-<!-- Owl Carousel CSS -->
-<link href="css/owl.carousel.css" rel="stylesheet">
-<link href="css/owl.transitions.css" rel="stylesheet">
-<!-- ColorBox CSS -->
-<link href="css/colorbox.css" rel="stylesheet">
-<!-- Theme CSS -->
-<link href="css/style.css" rel="stylesheet">
-<!-- Color CSS -->
-<link href="css/pink.css" rel="stylesheet">
-
-
-<!-- Google Fonts -->
-<link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha384-MxVzx5YTL6X7Zc3WhUMlWZuPP1NfAN+w2K+7R3CwLP9dzjBrjTnZlOzrNtvwfqRt" crossorigin="anonymous">
+  <!-- Flaticon CSS -->
+  <link href="css/flaticon/flaticon.css" rel="stylesheet">
+  <!-- Owl Carousel CSS -->
+  <link href="css/owl.carousel.css" rel="stylesheet">
+  <link href="css/owl.transitions.css" rel="stylesheet">
+  <!-- ColorBox CSS -->
+  <link href="css/colorbox.css" rel="stylesheet">
+  <!-- Theme CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- Color CSS -->
+  <link href="css/pink.css" rel="stylesheet">
+  <!-- Vegas CSS -->
+  <link href="css/vegas.min.css" rel="stylesheet">
 
 
-<audio controls autoplay loop>
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+
+
+  <!-- <audio controls autoplay loop>
   <source src="./audio/intro.mp3" type="audio/mpeg">
-  <!-- <source src="ruta_al_archivo_de_musica.ogg" type="audio/ogg"> -->
   Tu navegador no soporta la reproducción de audio.
-</audio>
-<style>
-  /* Define una clase CSS para el cursor de la mano */
-  a {
-    text-decoration: none!important;
-  }
-  .hand-cursor {
-    cursor: pointer;
-  }
-</style>
+</audio> -->
+  <style>
+    /* Define una clase CSS para el cursor de la mano */
+    a {
+      text-decoration: none !important;
+    }
+
+    .hand-cursor {
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
+  <!-- Modal -->
+  <div id="modal">
+    <div>
+      <div class="married_coundown"></div>
+      <div id="wellcome">Bienvenido</div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="header_plane anim"></div>
+
+    <!-- Menu Button -->
+    <a class="main_menu_btn">
+      <span class="line line1"></span>
+      <span class="line line2"></span>
+      <span class="line line3"></span>
+    </a>
 
 
- 	<!-- Header -->
-    <header>
-        <div class="header_plane anim"></div>
-
-        <!-- Menu Button -->
-        <a class="main_menu_btn">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-        </a>
-
-
-        <!-- Submenu -->
-        <div class="main_menu_block">
-            <div class="menu_wrapper">
-                <div class="sub_menu anim">
-                    <ul>
-                        <li><a href="#our_story">Nuestra Historia</a></li>
-                        <li><a href="#guests">Our Bridal Party</a></li>
-                        <li><a href="#when_where">Cuando y Donde</a></li>
-                        <li><a href="#hotel">Hotel Reservation</a></li>
-                        <li><a href="#events">Eventos</a></li>
-                        <li><a href="#rsvp">RSVP</a></li>
-                        <li><a href="#gallery">Galeria</a></li>
-                        <li><a href="#registry">Gift Registry</a></li>
-                    </ul>
-                </div>
-                <div class="sub_img anim"></div>
-            </div>
+    <!-- Submenu -->
+    <div class="main_menu_block">
+      <div class="menu_wrapper">
+        <div class="sub_menu anim">
+          <ul>
+            <li><a href="#our_story">Nuestra Historia</a></li>
+            <li><a href="#guests">Our Bridal Party</a></li>
+            <li><a href="#when_where">Cuando y Donde</a></li>
+            <li><a href="#hotel">Hotel Reservation</a></li>
+            <li><a href="#events">Eventos</a></li>
+            <li><a href="#rsvp">RSVP</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#registry">Gift Registry</a></li>
+          </ul>
         </div>
-        <!-- Submenu End -->
+        <div class="sub_img anim"></div>
+      </div>
+    </div>
+    <!-- Submenu End -->
 
-		<!-- Social Buttons -->
-        <!-- <div class="header_social">
+    <!-- Social Buttons -->
+    <!-- <div class="header_social">
             <a href="#"><i class="fa fa-twitter"></i></a>
             <a href="#"><i class="fa fa-facebook"></i></a>
             <a href="#"><i class="fa fa-pinterest"></i></a>
         </div> -->
 
-    </header>
-    <!-- Header End -->
+  </header>
+  <!-- Header End -->
 
-<div class="page">
+  <div class="page">
 
     <!-- Intro -->
-    <section class="home_intro white_txt parallax2" data-image="http://placehold.it/1920x800">
-    	<div class="home_txt" data-0="opacity:1" data-top-bottom="opacity:0">
+    <div id="audio">
+      <button id="btnReproducir">Reproducir sonido</button>
+      <button id="btnPausar">Pausar sonido</button>
+      <button id="btnReiniciar">Ir a inicio de sonido</button>
+    </div>
 
-            <!-- Intro Text -->
+    <!-- Intro -->
+    <section class="home_intro white_txt parallax2">
+      <div id="vegas" style="width:100%;height:100%;z-index:0"></div>
+      <div class="home_txt" data-0="opacity:1" data-top-bottom="opacity:0">
 
-            <div class="title1 title1_2">Ricardo & Sally</div>
-            <div class="bullet"><span>19 <b>08</b></span></div>
-            <div class="title0">2023</div>
-            <a href="#married" class="intro_down"><span><i class="fa fa-angle-down"></i></span></a>
-        </div>
-    	<div class="into_firefly"></div>
+        <!-- Intro Text -->
+
+        <div class="title1 title1_2">Ricardo & Sally</div>
+        <div class="bullet"><span style="font-size:30px;">19 &nbsp;&nbsp;&nbsp;08</span></div>
+        <div class="title0" style="font-size:30px">2023</div>
+        <a href="#married" class="intro_down"><span><i class="fa fa-angle-down"></i></span></a>
+      </div>
+      <div class="into_firefly"></div>
     </section>
-	<!-- Intro End -->
+    <!-- Intro End -->
 
     <!-- Married -->
     <section class="married clearfix" id="married">
-        <div class="container">
-                <div class="im1 parallax"  data-bottom="left:20%" data-center="left:0" data-image="http://placehold.it/302x302"><div class="im_arrows"></div></div>
-                <div class="im2 parallax" data-bottom="right:20%" data-center="right:0" data-image="http://placehold.it/302x302"><div class="im_arrows"></div></div>
-
-                <div class="married_txt" data-bottom="opacity:0" data-center="opacity:1">
-                    <h2>Te Invitamos</h2>
-                    Este 19 de Agosto de 2023<br>
-                    <b>Ricardo Aguinaga Nuñez & Sally Surichaqui Campos</b><br>
-                    Escapate a Huancayo<br>
-                    <a href="#rsvp" class="btn go">RSRP NOW</a>
-
-                    <div class="married_coundown"></div>
-                    <div class="double_arrow"></div>
-                </div>
+      <div class="container">
+        <div class="im1 parallax" data-bottom="left:20%" data-center="left:0" data-image="http://placehold.it/302x302">
+          <div class="im_arrows"></div>
         </div>
+        <div class="im2 parallax" data-bottom="right:20%" data-center="right:0"
+          data-image="http://placehold.it/302x302">
+          <div class="im_arrows"></div>
+        </div>
+
+        <div class="married_txt" data-bottom="opacity:0" data-center="opacity:1">
+          <h2>Te Invitamos</h2>
+          Este 19 de Agosto de 2023<br>
+          <b>Ricardo Aguinaga Nuñez & Sally Surichaqui Campos</b><br>
+          Escapate a Huancayo<br>
+          <a href="#rsvp" class="btn go">RSRP NOW</a>
+
+          <div class="married_coundown"></div>
+          <div class="double_arrow"></div>
+        </div>
+      </div>
     </section>
     <!-- Married End -->
 
 
     <!-- Story -->
     <section class="our_story" id="our_story">
-            <h2>Nuestra Historia</h2>
+      <h2>Nuestra Historia</h2>
 
-            <!-- Wrapper -->
-            <div class="story_wrapper">
+      <!-- Wrapper -->
+      <div class="story_wrapper">
 
-               <!-- Item -->
-                <div class="story_item">
-                    <div class="story_img parallax" data-image="http://placehold.it/640x400">
-                        <a class="youtube cboxElement" href="http://www.youtube.com/embed/hEowkXOP_Wg?rel=0">
-                        <i class="flaticon-play102"></i></a>
-                    <div class="story_img_plane"></div></div>
-                    <div class="story_plane">
-                        <div class="story_back"></div>
-                        <div class="story_txt">
-                              <div class="story_title">
-                                Como nos conocimos
-                                <i>2017</i>
-                            </div>
-                            En agosto, nuestras vidas se entrelazaron en aquel trabajo donde surgió el amor entre nosotros, floreciendo con
-                            delicadeza. Un 28 de noviembre, decidimos formalizar y esa fecha se convirtió en nuestro aniversario, lleno de sonrisas
-                            cómplices y promesas susurradas al oído.
-                        </div>
-                    </div>
-                </div>
-               <!-- Item -->
-                <div class="story_item">
-                    <div class="story_img parallax" data-image="http://placehold.it/640x400">
-                        <a class="youtube cboxElement" href="http://www.youtube.com/embed/hEowkXOP_Wg?rel=0">
-                        <i class="flaticon-play102"></i></a>
-                    <div class="story_img_plane"></div></div>
-                    <div class="story_plane">
-                        <div class="story_back"></div>
-                        <div class="story_txt">
-                              <div class="story_title">
-                                El primer Año Nuevo juntos
-                                <i>01.01.2018</i>
-                            </div>
-                            Con la emoción del año nuevo, vivimos una noche mágica junto a nuestros amigos en una fiesta en la playa.
-                            Rodeados de risas contagiosas, el tiempo parecía detenerse. La arena se convertía en nuestra pista de
-                            baile improvisada, mientras los fuegos artificiales pintaban el cielo nocturno..
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item -->
-                <div class="story_item">
-                    <div class="story_img parallax" data-image="http://placehold.it/640x400"><div class="story_img_plane"></div></div>
-                    <div class="story_plane">
-                        <div class="story_back"></div>
-                        <div class="story_txt">
-                              <div class="story_title">
-                                Nuestro Primer Viaje
-                                <i>23.08.2018</i>
-                            </div>
-                            En Churín, encontramos nuestra primera gran aventura, un lugar que nos regaló recuerdos inolvidables enmarcados en la
-                            celebración de nuestros cumpleaños. Estos momentos se volvieron tan significativos para nosotros que permanecerán
-                            grabados en nuestra memoria para siempre.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item -->
-                <div class="story_item">
-                    <div class="story_img parallax" data-image="http://placehold.it/640x400"><div class="story_img_plane"></div></div>
-                    <div class="story_plane">
-                        <div class="story_back"></div>
-                        <div class="story_txt">
-                              <div class="story_title">
-                                Feliz Cumpleaños
-                                <i>23 y 24 del 08</i>
-                            </div>
-                            El destino nos bendijo con fechas de cumpleaños consecutivas, el 23 y 24 de agosto. Estos días se convirtieron en los
-                            más especiales del año, siempre celebrados juntos con amor y alegría. Verdaderamente amamos nuestros cumpleaños,
-                            momentos que nos unen de manera única.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item -->
-                <div class="story_item">
-                    <div class="story_img parallax" data-image="http://placehold.it/640x400"><div class="story_img_plane"></div></div>
-                    <div class="story_plane">
-                        <div class="story_back"></div>
-                        <div class="story_txt">
-                              <div class="story_title">
-                                Momentos Importantes
-                                <!-- <i>10.01.2015</i> -->
-                            </div>
-                            Juntos, hemos compartido momentos cruciales en nuestro camino, desde nuestra graduación hasta nuestra titulación,
-                            colegiatura, postgrado y confirmación. Y ahora, en este momento, llegamos al "Sí, acepto", un paso que abre un infinito
-                            de emociones y promesas. Cada uno de estos hitos ha fortalecido nuestro vínculo, trazando una historia llena de
-                            significado y crecimiento mutuo.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item -->
-                <div class="story_item">
-                    <div class="story_img parallax" data-image="http://placehold.it/640x400"><div class="story_img_plane"></div></div>
-                    <div class="story_plane">
-                        <div class="story_back"></div>
-                        <div class="story_txt">
-                              <div class="story_title">
-                                La Propuesta
-                                <i>03.02.2015</i>
-                            </div>
-                            Nuestras cuatro propuestas de matrimonio fueron únicas y diversas, ya que Ricardo siempre dijo: "Te pediría las veces
-                            que sean necesarias". Y yo, sin dudarlo, siempre respondí ¡Sí! Reflejan nuestra determinación de decir "sí" a todas las
-                            oportunidades de amor y compromiso.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item -->
-                <div class="story_item">
-                    <div class="story_img parallax" data-image="http://placehold.it/640x400"><div class="story_img_plane"></div></div>
-                    <div class="story_plane">
-                        <div class="story_back"></div>
-                        <div class="story_txt">
-                              <div class="story_title">
-                                La Primera Pedida
-                                <i>08.2023</i>
-                            </div>
-                             La más inolvidable. fue una noche en la cual yo me iba de viaje y estaba en el terminal, cuando Ricardo me llama y expresa: "Te voy a decir algo muy importante y piensalo muy bien...". y bueno.. ya se imaginaran lo que siguio a eso. cabe resaltar que nosotros ya habiamos hablado de ese tema dos años antes.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item -->
-                <div class="story_item">
-                    <div class="story_img parallax" data-image="http://placehold.it/640x400"><div class="story_img_plane"></div></div>
-                    <div class="story_plane">
-                        <div class="story_back"></div>
-                        <div class="story_txt">
-                              <div class="story_title">
-                                Nuestra nueva Familia
-                                <i>08.2023</i>
-                            </div>
-                            Como nueva familia, anhelamos ser padres, llenos de ilusión y esperanza. Visualizamos con amor el futuro, donde nuestros
-                            corazones se expandirán al recibir la bendición de la paternidad. Listos para embarcarnos en esta hermosa aventura,
-                            construiremos memorias inolvidables al ver crecer nuestra familia.
-                        </div>
-                    </div>
-                </div>
-
+        <!-- Item -->
+        <div class="story_item">
+          <div class="story_img parallax" data-image="http://placehold.it/640x400">
+            <a class="youtube cboxElement" href="http://www.youtube.com/embed/hEowkXOP_Wg?rel=0">
+              <i class="flaticon-play102"></i></a>
+            <div class="story_img_plane"></div>
+          </div>
+          <div class="story_plane">
+            <div class="story_back"></div>
+            <div class="story_txt">
+              <div class="story_title">
+                Como nos conocimos
+                <i>2017</i>
+              </div>
+              En agosto, nuestras vidas se entrelazaron en aquel trabajo donde surgió el amor entre nosotros,
+              floreciendo con
+              delicadeza. Un 28 de noviembre, decidimos formalizar y esa fecha se convirtió en nuestro aniversario,
+              lleno de sonrisas
+              cómplices y promesas susurradas al oído.
+            </div>
+          </div>
         </div>
+        <!-- Item -->
+        <div class="story_item">
+          <div class="story_img parallax" data-image="http://placehold.it/640x400">
+            <a class="youtube cboxElement" href="http://www.youtube.com/embed/hEowkXOP_Wg?rel=0">
+              <i class="flaticon-play102"></i></a>
+            <div class="story_img_plane"></div>
+          </div>
+          <div class="story_plane">
+            <div class="story_back"></div>
+            <div class="story_txt">
+              <div class="story_title">
+                El primer Año Nuevo juntos
+                <i>01.01.2018</i>
+              </div>
+              Con la emoción del año nuevo, vivimos una noche mágica junto a nuestros amigos en una fiesta en la playa.
+              Rodeados de risas contagiosas, el tiempo parecía detenerse. La arena se convertía en nuestra pista de
+              baile improvisada, mientras los fuegos artificiales pintaban el cielo nocturno..
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="story_item">
+          <div class="story_img parallax" data-image="http://placehold.it/640x400">
+            <div class="story_img_plane"></div>
+          </div>
+          <div class="story_plane">
+            <div class="story_back"></div>
+            <div class="story_txt">
+              <div class="story_title">
+                Nuestro Primer Viaje
+                <i>23.08.2018</i>
+              </div>
+              En Churín, encontramos nuestra primera gran aventura, un lugar que nos regaló recuerdos inolvidables
+              enmarcados en la
+              celebración de nuestros cumpleaños. Estos momentos se volvieron tan significativos para nosotros que
+              permanecerán
+              grabados en nuestra memoria para siempre.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="story_item">
+          <div class="story_img parallax" data-image="http://placehold.it/640x400">
+            <div class="story_img_plane"></div>
+          </div>
+          <div class="story_plane">
+            <div class="story_back"></div>
+            <div class="story_txt">
+              <div class="story_title">
+                Feliz Cumpleaños
+                <i>23 y 24 del 08</i>
+              </div>
+              El destino nos bendijo con fechas de cumpleaños consecutivas, el 23 y 24 de agosto. Estos días se
+              convirtieron en los
+              más especiales del año, siempre celebrados juntos con amor y alegría. Verdaderamente amamos nuestros
+              cumpleaños,
+              momentos que nos unen de manera única.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="story_item">
+          <div class="story_img parallax" data-image="http://placehold.it/640x400">
+            <div class="story_img_plane"></div>
+          </div>
+          <div class="story_plane">
+            <div class="story_back"></div>
+            <div class="story_txt">
+              <div class="story_title">
+                Momentos Importantes
+                <!-- <i>10.01.2015</i> -->
+              </div>
+              Juntos, hemos compartido momentos cruciales en nuestro camino, desde nuestra graduación hasta nuestra
+              titulación,
+              colegiatura, postgrado y confirmación. Y ahora, en este momento, llegamos al "Sí, acepto", un paso que
+              abre un infinito
+              de emociones y promesas. Cada uno de estos hitos ha fortalecido nuestro vínculo, trazando una historia
+              llena de
+              significado y crecimiento mutuo.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="story_item">
+          <div class="story_img parallax" data-image="http://placehold.it/640x400">
+            <div class="story_img_plane"></div>
+          </div>
+          <div class="story_plane">
+            <div class="story_back"></div>
+            <div class="story_txt">
+              <div class="story_title">
+                La Propuesta
+                <i>03.02.2015</i>
+              </div>
+              Nuestras cuatro propuestas de matrimonio fueron únicas y diversas, ya que Ricardo siempre dijo: "Te
+              pediría las veces
+              que sean necesarias". Y yo, sin dudarlo, siempre respondí ¡Sí! Reflejan nuestra determinación de decir
+              "sí" a todas las
+              oportunidades de amor y compromiso.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="story_item">
+          <div class="story_img parallax" data-image="http://placehold.it/640x400">
+            <div class="story_img_plane"></div>
+          </div>
+          <div class="story_plane">
+            <div class="story_back"></div>
+            <div class="story_txt">
+              <div class="story_title">
+                La Primera Pedida
+                <i>08.2023</i>
+              </div>
+              La más inolvidable. fue una noche en la cual yo me iba de viaje y estaba en el terminal, cuando Ricardo me
+              llama y expresa: "Te voy a decir algo muy importante y piensalo muy bien...". y bueno.. ya se imaginaran
+              lo que siguio a eso. cabe resaltar que nosotros ya habiamos hablado de ese tema dos años antes.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="story_item">
+          <div class="story_img parallax" data-image="http://placehold.it/640x400">
+            <div class="story_img_plane"></div>
+          </div>
+          <div class="story_plane">
+            <div class="story_back"></div>
+            <div class="story_txt">
+              <div class="story_title">
+                Nuestra nueva Familia
+                <i>08.2023</i>
+              </div>
+              Como nueva familia, anhelamos ser padres, llenos de ilusión y esperanza. Visualizamos con amor el futuro,
+              donde nuestros
+              corazones se expandirán al recibir la bendición de la paternidad. Listos para embarcarnos en esta hermosa
+              aventura,
+              construiremos memorias inolvidables al ver crecer nuestra familia.
+            </div>
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <!-- The Crew -->
     <section class="guests" id="guests">
-        <div class="container">
-            <h2>Nuestros Padrinos</h2>
+      <div class="container">
+        <h2>Nuestros Padrinos</h2>
 
-             <!-- Guest Wrapper -->
-            <div class="guest_wrapper" >
-            <!-- Best Man & Maid of Honor  -->
+        <!-- Guest Wrapper -->
+        <div class="guest_wrapper">
+          <!-- Best Man & Maid of Honor  -->
+
+          <!-- RELIGIOSO -->
+          <div class="guest_item">
+            <div class="guest_photo"><img src="./images/padrinos/jairo.png" alt="Best Man"></div>
+            <div class="guest_title">Jairo Sernaque Galopino </div>
+            <i class="flaticon-balloon14"></i> Religioso
+
+          </div>
+          <div class="guest_item">
+            <div class="guest_photo"><img src="./images/padrinos/jandira.png" alt="Maid Of Honor"></div>
+            <div class="guest_title">Jandira Surichaqui Campos </div>
+            <i class="flaticon-balloon14"></i> Religioso
+
+          </div>
+          <!-- CIVIL -->
+          <div class="guest_item">
+            <div class="guest_photo"><img src="./images/padrinos/judith.png" alt="Justin"></div>
+            <div class="guest_title">Esther Nuñez Rodriguez </div>
+            <i class="flaticon-balloon14"></i> Civil
+          </div>
+
+          <div class="guest_item">
+            <div class="guest_photo"><img src="./images/padrinos/david.png" alt="James"></div>
+            <div class="guest_title">David LLeonart Roig </div>
+            <i class="flaticon-balloon14"></i> Civil
+
+          </div>
 
 
-            <div class="guest_item">
-                <div class="guest_photo"><img src="./images/padrinos/jairo.png" alt="Best Man"></div>
-                <div class="guest_title">Jairo Sernaque Galopino </div>
-                <i class="flaticon-balloon14"></i>  Religioso
 
-            </div>
-            <div class="guest_item">
-                <div class="guest_photo"><img src="./images/padrinos/jairo.png" alt="Maid Of Honor"></div>
-                <div class="guest_title">Jandira Surichaqui Campos </div>
-                 <i class="flaticon-balloon14"></i> Religioso
-
-            </div>
-
-            <div class="guest_item">
-                <div class="guest_photo"><img src="./images/padrinos/jairo.png" alt="James"></div>
-                <div class="guest_title">David LLeonart Roig </div>
-                <i class="flaticon-balloon14"></i>  Civil
-
-            </div>
-            <div class="guest_item">
-                <div class="guest_photo"><img src="./images/padrinos/jairo.png" alt="Justin"></div>
-                <div class="guest_title">Esther Nuñez Rodriguez </div>
-                <i class="flaticon-balloon14"></i> Civil
-
-            </div>
-
-
-            </div>
-            <!-- Guest Wrapper End -->
         </div>
+        <!-- Guest Wrapper End -->
+      </div>
     </section>
     <!-- The Crew End -->
 
 
 
     <!-- When & Where -->
-    <section class="when_where white_txt parallax" id="when_where" data-image="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Bas%C3%ADlica_Catedral_de_Huancayo.jpg/1280px-Bas%C3%ADlica_Catedral_de_Huancayo.jpg" data-bottom-top="opacity:0;" data-bottom="opacity:1;">
-        <div class="over"></div>
-        <div class="container">
+    <section class="when_where white_txt parallax" id="when_where"
+      data-image="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Bas%C3%ADlica_Catedral_de_Huancayo.jpg/1280px-Bas%C3%ADlica_Catedral_de_Huancayo.jpg"
+      data-bottom-top="opacity:0;" data-bottom="opacity:1;">
+      <div class="over"></div>
+      <div class="container">
 
-            <!-- Photocamera Icon -->
-            <div class="photocamera"><span class="flaticon-slr2"></span></div>
+        <!-- Photocamera Icon -->
+        <div class="photocamera"><span class="flaticon-slr2"></span></div>
 
-            <div class="when_where_container opacity">
-            <h2>Nos casamos por Religioso en:</h2>
+        <div class="when_where_container opacity">
+          <h2>Nos casamos por Religioso en:</h2>
 
-                <!-- Texts -->
-                <div class="pattern1"></div>
-                <div class="title1">Basilica</div>
-                <a href="https://goo.gl/maps/Ypfj3quYMiPwXCcN6" target="_blank">
-                  <div class="title1">Catedral de Huancayo</div>
-                </a>
-                <div class="title3">Plaza Constitución<br /><br /><a href="https://goo.gl/maps/Ypfj3quYMiPwXCcN6" target="_blank">
-                <i class="flaticon-map35"></i></a> </div>
+          <!-- Texts -->
+          <div class="pattern1"></div>
+          <div class="title1">Basilica</div>
+          <a href="https://goo.gl/maps/Ypfj3quYMiPwXCcN6" target="_blank">
+            <div class="title1">Catedral de Huancayo</div>
+          </a>
+          <div class="title3">Plaza Constitución<br /><br /><a href="https://goo.gl/maps/Ypfj3quYMiPwXCcN6"
+              target="_blank">
+              <i class="flaticon-map35"></i></a> </div>
 
-                <div class="pattern2"></div>
-                <div class="title1">8:00</div>
-                <div class="title5">de la mañana</div>
-                <div class="title4">Amenizado por la<br>Sinfónica de Huancayo</div>
-                <div class="pattern3"></div>
-            </div>
+          <div class="pattern2"></div>
+          <div class="title1">8:00</div>
+          <div class="title5">de la mañana</div>
+          <div class="title4">Amenizado por la<br>Sinfónica de Huancayo</div>
+          <div class="pattern3"></div>
         </div>
+      </div>
     </section>
     <!-- When & Where End -->
 
 
     <!-- Events -->
     <section class="our_story events" id="events">
-            <h2>Artistas Invitados</h2>
+      <h2>Artistas Invitados</h2>
 
-            <!-- Wrapper -->
-            <div class="story_wrapper">
+      <!-- Wrapper -->
+      <div class="story_wrapper">
 
-                <!-- Item -->
-                <div class="story_item">
-                    <div class="story_img parallax" data-image="./images/events/sinfonica.jpg"><div class="story_img_plane"></div></div>
-                    <div class="story_plane">
-                        <div class="story_back"></div>
-                        <div class="story_txt">
-                            <div class="story_title">
-                                Sinfónica de Huancayo
-                                <i>10:30</i>
-                            </div>
-                            Nos complace tener a la prestigiosa Orquesta Sinfónica de Huancayo para que nos acompañe en el
-                            día más especial de nuestras vidas. Con su maestría musical y su pasión inigualable, crearán una atmósfera mágica y
-                            emotiva durante nuestra ceremonia nupcial.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item -->
-                <div class="story_item">
-                    <div class="story_img parallax" data-image="./images/events/caminantes.jpg">
-                        <!-- <a class="youtube cboxElement" href="http://www.youtube.com/embed/hEowkXOP_Wg?rel=0">
-                        <i class="flaticon-play102"></i></a> -->
-                    <div class="story_img_plane"></div></div>
-
-                    <div class="story_plane">
-                        <div class="story_back"></div>
-                        <div class="story_txt">
-                              <div class="story_title">
-                                Orquesta "Los Caminantes del Perú"
-                                <i>11:30</i>
-                            </div>
-                             Grupo musical con años de trayectoria, que se destaca por la versatilidad de los generos musicales que cautiva al publico. a cargo del señor Hugo Peña Durán.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item -->
-                <div class="story_item">
-                    <div class="story_img parallax" data-image="./images/events/danzas.jpg"><div class="story_img_plane"></div></div>
-                    <div class="story_plane">
-                        <div class="story_back"></div>
-                        <div class="story_txt">
-                              <div class="story_title">
-                                Danzas Folklóricas
-                                <i>12:30</i>
-                            </div>
-                            Nos transportarán a través de las tradiciones y la riqueza cultural de nuestra tierra.
-                            Con sus coloridos trajes, su gracia en los movimientos y su energía contagiosa, nos brindarán una experiencia única y
-                            emocionante. Un homenaje a nuestras raíces y a nuestra herencia
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item -->
-                <div class="story_item">
-                    <div class="story_img parallax" data-image="./images/events/ana_gabriel.jpg"><div class="story_img_plane"></div></div>
-                    <div class="story_plane">
-                        <div class="story_back"></div>
-                        <div class="story_txt">
-                              <div class="story_title">
-                                Ana Gabriel
-                                <i>1:00</i>
-                            </div>
-                             Contaremos con la talentosa Nataly Campos, artista imitadora de "Ana Gabriel" en YO SOY. quien nos podra a suspirar con los grandes exitos de dicha artista.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item -->
-                <div class="story_item">
-                    <div class="story_img parallax" data-image="./images/events/kjantu.jpg"><div class="story_img_plane"></div></div>
-                      <a class="youtube cboxElement" href="https://www.youtube.com/embed/OaXBmg2wX84?rel=0">
-                      <i class="flaticon-play102"></i></a>
-                    <div class="story_plane">
-                        <div class="story_back"></div>
-                        <div class="story_txt">
-                              <div class="story_title">
-                                Kjantu "Los Davila"
-                                <i>4:00 / 6:00</i>
-                            </div>
-                             Ganadores de "La Voz generación", quienes concentran la agrupación Kjantu, las cual difunde nuestra cultura a travez de la musica andina y latinoamericana.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item -->
-                <div class="story_item">
-                    <div class="story_img parallax" data-image="./images/events/dj.jpg"><div class="story_img_plane"></div></div>
-                    <div class="story_plane">
-                        <div class="story_back"></div>
-                        <div class="story_txt">
-                              <div class="story_title">
-                                DJ Peligro
-                                <i>1:00 / 10:00</i>
-                            </div>
-                            Con su amplia experiencia y su conocimiento musical, este DJ nos garantiza una noche llena de ritmo y diversión. Desde
-                            los clásicos atemporales hasta los últimos éxitos de la pista de baile, se encargará de mantener a todos en movimiento y
-                            creará una atmósfera inolvidable.
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Item -->
-                <div class="story_item">
-                    <div class="story_img parallax" data-image="./images/events/bryan.jpg"><div class="story_img_plane"></div></div>
-                    <div class="story_plane">
-                        <div class="story_back"></div>
-                        <div class="story_txt">
-                              <div class="story_title">
-                                Bryan Arambulo
-                                <i>6:30 / 8:30</i>
-                            </div>
-                            Jefferson Torres, ganador de "Yo Soy" con su imitación de Bryan Arambulo, nos cautivará la noche
-                            con un espectacular show. Su talento excepcional y su habilidad para capturar la esencia artística nos
-                            dejarán sin palabras. Prepárense para revivir los mejores momentos de la música de Bryan Arambulo.
-                        </div>
-                    </div>
-                </div>
-
-
+        <!-- Item -->
+        <div class="story_item">
+          <div class="story_img parallax" data-image="./images/events/sinfonica.jpg">
+            <div class="story_img_plane"></div>
+          </div>
+          <div class="story_plane">
+            <div class="story_back"></div>
+            <div class="story_txt">
+              <div class="story_title">
+                Sinfónica de Huancayo
+                <i>10:30</i>
+              </div>
+              Nos complace tener a la prestigiosa Orquesta Sinfónica de Huancayo para que nos acompañe en el
+              día más especial de nuestras vidas. Con su maestría musical y su pasión inigualable, crearán una atmósfera
+              mágica y
+              emotiva durante nuestra ceremonia nupcial.
+            </div>
+          </div>
         </div>
+
+        <!-- Item -->
+        <div class="story_item">
+          <div class="story_img parallax" data-image="./images/events/caminantes.jpg">
+            <!-- <a class="youtube cboxElement" href="http://www.youtube.com/embed/hEowkXOP_Wg?rel=0">
+                        <i class="flaticon-play102"></i></a> -->
+            <div class="story_img_plane"></div>
+          </div>
+
+          <div class="story_plane">
+            <div class="story_back"></div>
+            <div class="story_txt">
+              <div class="story_title">
+                Orquesta "Los Caminantes del Perú"
+                <i>11:30</i>
+              </div>
+              Grupo musical con años de trayectoria, que se destaca por la versatilidad de los generos musicales que
+              cautiva al publico. a cargo del señor Hugo Peña Durán.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="story_item">
+          <div class="story_img parallax" data-image="./images/events/danzas.jpg">
+            <div class="story_img_plane"></div>
+          </div>
+          <div class="story_plane">
+            <div class="story_back"></div>
+            <div class="story_txt">
+              <div class="story_title">
+                Danzas Folklóricas
+                <i>12:30</i>
+              </div>
+              Nos transportarán a través de las tradiciones y la riqueza cultural de nuestra tierra.
+              Con sus coloridos trajes, su gracia en los movimientos y su energía contagiosa, nos brindarán una
+              experiencia única y
+              emocionante. Un homenaje a nuestras raíces y a nuestra herencia
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="story_item">
+          <div class="story_img parallax" data-image="./images/events/ana_gabriel.jpg">
+            <div class="story_img_plane"></div>
+          </div>
+          <div class="story_plane">
+            <div class="story_back"></div>
+            <div class="story_txt">
+              <div class="story_title">
+                Ana Gabriel
+                <i>1:00</i>
+              </div>
+              Contaremos con la talentosa Nataly Campos, artista imitadora de "Ana Gabriel" en YO SOY. quien nos podra a
+              suspirar con los grandes exitos de dicha artista.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="story_item">
+          <div class="story_img parallax" data-image="./images/events/kjantu.jpg">
+            <div class="story_img_plane"></div>
+          </div>
+          <a class="youtube cboxElement" href="https://www.youtube.com/embed/OaXBmg2wX84?rel=0">
+            <i class="flaticon-play102"></i></a>
+          <div class="story_plane">
+            <div class="story_back"></div>
+            <div class="story_txt">
+              <div class="story_title">
+                Kjantu "Los Davila"
+                <i>4:00 / 6:00</i>
+              </div>
+              Ganadores de "La Voz generación", quienes concentran la agrupación Kjantu, las cual difunde nuestra
+              cultura a travez de la musica andina y latinoamericana.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="story_item">
+          <div class="story_img parallax" data-image="./images/events/dj.jpg">
+            <div class="story_img_plane"></div>
+          </div>
+          <div class="story_plane">
+            <div class="story_back"></div>
+            <div class="story_txt">
+              <div class="story_title">
+                DJ Peligro
+                <i>1:00 / 10:00</i>
+              </div>
+              Con su amplia experiencia y su conocimiento musical, este DJ nos garantiza una noche llena de ritmo y
+              diversión. Desde
+              los clásicos atemporales hasta los últimos éxitos de la pista de baile, se encargará de mantener a todos
+              en movimiento y
+              creará una atmósfera inolvidable.
+            </div>
+          </div>
+        </div>
+
+        <!-- Item -->
+        <div class="story_item">
+          <div class="story_img parallax" data-image="./images/events/bryan.jpg">
+            <div class="story_img_plane"></div>
+          </div>
+          <div class="story_plane">
+            <div class="story_back"></div>
+            <div class="story_txt">
+              <div class="story_title">
+                Bryan Arambulo
+                <i>6:30 / 8:30</i>
+              </div>
+              Jefferson Torres, ganador de "Yo Soy" con su imitación de Bryan Arambulo, nos cautivará la noche
+              con un espectacular show. Su talento excepcional y su habilidad para capturar la esencia artística nos
+              dejarán sin palabras. Prepárense para revivir los mejores momentos de la música de Bryan Arambulo.
+            </div>
+          </div>
+        </div>
+
+
+      </div>
     </section>
     <!-- Events End -->
 
     <!-- salon de recepcion -->
-    <section class="when_where white_txt parallax" id="when_where"
-      data-image="./images/where/adriana.jpg"
+    <section class="when_where white_txt parallax" id="when_where" data-image="./images/where/adriana.jpg"
       data-bottom-top="opacity:0;" data-bottom="opacity:1;">
       <div class="over"></div>
       <div class="container">
@@ -506,7 +581,7 @@
             <div class="title1">Villa Adriana</div>
           </a>
           <div class="title3">El Tambo <br /><br /><a href="https://goo.gl/maps/QtaDg4bnBMhpBzYk8" target="_blank">
-             <i class="flaticon-map35"></i></a> </div>
+              <i class="flaticon-map35"></i></a> </div>
 
           <div class="pattern2"></div>
           <div class="title1">10:30</div>
@@ -563,56 +638,56 @@
 
     <!-- Gallery -->
     <section class="gallery" id="gallery">
-        <h2>Nuestra galería de fotos</h2>
-        <div class="gallery_wrapper">
-            <div class="gallery_item">
-                <div class="gallery_txt">
-                   <a href="http://placehold.it/640x400" title="In late August, on a family vacation to Oahu"><b>Hawaii</b>
-                   In late August, on a family vacation to Oahu
-                   </a>
-                </div>
-                <img src="http://placehold.it/640x400" alt="Gallery 1">
-            </div>
-            <div class="gallery_item">
-                <div class="gallery_txt">
-                    <a href="http://placehold.it/640x400" title="In Summer 2015"><b>New Zealand</b>
-                    In Summer 2015
-                    </a>
-                </div>
-                <img src="http://placehold.it/640x400" alt="Gallery 2">
-            </div>
-            <div class="gallery_item">
-                <div class="gallery_txt">
-                    <a href="http://placehold.it/640x400" title="February 5, 2015 / New-York, USA"><b>Honeymoon</b>
-                    </a>
-                </div>
-                <img src="http://placehold.it/640x400" alt="Gallery 3">
-            </div>
-            <div class="gallery_item">
-                <div class="gallery_txt">
-                    <a href="http://placehold.it/640x400" title="February 5, 2015 / New-York, USA"><b>Honeymoon</b>
-                    February 5, 2015 / New-York, USA
-                    </a>
-                </div>
-                <img src="http://placehold.it/640x400" alt="Gallery 4">
-            </div>
-            <div class="gallery_item">
-                <div class="gallery_txt">
-                   <a href="http://placehold.it/640x400" title="In late August, on a family vacation to Oahu"><b>Hawaii</b>
-                   In late August, on a family vacation to Oahu
-                   </a>
-                </div>
-                <img src="http://placehold.it/640x400" alt="Gallery 5">
-            </div>
-            <div class="gallery_item">
-                <div class="gallery_txt">
-                    <a href="http://placehold.it/640x400" title="In Summer 2015"><b>New Zealand</b>
-                    In Summer 2015<br>
-                    </a>
-                </div>
-                <img src="http://placehold.it/640x400" alt="Gallery 6">
-            </div>
+      <h2>Nuestra galería de fotos</h2>
+      <div class="gallery_wrapper">
+        <div class="gallery_item">
+          <div class="gallery_txt">
+            <a href="./images/galeria/01.jpg" title="In late August, on a family vacation to Oahu"><b>Hawaii</b>
+              In late August, on a family vacation to Oahu
+            </a>
+          </div>
+          <img src="./images/galeria/01.jpg" alt="Gallery 1">
         </div>
+        <div class="gallery_item">
+          <div class="gallery_txt">
+            <a href="http://placehold.it/640x400" title="In Summer 2015"><b>New Zealand</b>
+              In Summer 2015
+            </a>
+          </div>
+          <img src="http://placehold.it/640x400" alt="Gallery 2">
+        </div>
+        <div class="gallery_item">
+          <div class="gallery_txt">
+            <a href="http://placehold.it/640x400" title="February 5, 2015 / New-York, USA"><b>Honeymoon</b>
+            </a>
+          </div>
+          <img src="http://placehold.it/640x400" alt="Gallery 3">
+        </div>
+        <div class="gallery_item">
+          <div class="gallery_txt">
+            <a href="http://placehold.it/640x400" title="February 5, 2015 / New-York, USA"><b>Honeymoon</b>
+              February 5, 2015 / New-York, USA
+            </a>
+          </div>
+          <img src="http://placehold.it/640x400" alt="Gallery 4">
+        </div>
+        <div class="gallery_item">
+          <div class="gallery_txt">
+            <a href="http://placehold.it/640x400" title="In late August, on a family vacation to Oahu"><b>Hawaii</b>
+              In late August, on a family vacation to Oahu
+            </a>
+          </div>
+          <img src="http://placehold.it/640x400" alt="Gallery 5">
+        </div>
+        <div class="gallery_item">
+          <div class="gallery_txt">
+            <a href="http://placehold.it/640x400" title="In Summer 2015"><b>New Zealand</b>
+              In Summer 2015<br>
+            </a>
+          </div>
+          <img src="http://placehold.it/640x400" alt="Gallery 6">
+        </div>
+      </div>
     </section>
     <!-- Gallery End -->
 
@@ -637,8 +712,8 @@
     <!-- Gift Registry End -->
 
     <!-- test -->
-  <div class="accordion" id="accordionExample" style="background-color:rgba(70, 70, 70, 0.2)">
-    <div class="accordion-item">
+    <div class="accordion" id="accordionExample" style="background-color:rgba(70, 70, 70, 0.2)">
+      <!-- <div class="accordion-item">
       <div class="container">
           <a class="link" href="" onmouseover="changeCursor(event)" onmouseout="resetCursor(event)"><h2 class="accordion-header" id="regalos">
             <div class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -688,78 +763,92 @@
             </div>
           </div>
       </div>
-    </div>
-    <div class="accordion-item">
-      <div class="container">
-          <a class="link" href="" onmouseover="changeCursor(event)" onmouseout="resetCursor(event)"><h2 class="accordion-header" id="regalos">
-            <div class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-             Regalos en Efectivo <i class="fa fa-wallet"></i>
-            </div>
-          </h2></a>
+    </div> -->
+      <div class="accordion-item">
+        <div class="container">
+          <a class="link" href="" onmouseover="changeCursor(event)" onmouseout="resetCursor(event)">
+            <h2 class="accordion-header" id="regalos">
+              <div class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                aria-expanded="true" aria-controls="collapseTwo">
+                Regalos en Efectivo <i class="fa fa-wallet"></i>
+              </div>
+            </h2>
+          </a>
           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
             <div class="accordion-body">
               <div class="col-6">
-                <h3>Número de cuenta: BBVA - Ricardo Aguinaga Nuñez /  Sally Surichaqui</h3>
+                <h3>Número de cuenta: BBVA - Ricardo Aguinaga Nuñez / Sally Surichaqui</h3>
                 <ul style="color:#c96897">
-                  <li><h4 >Número de cuenta: 0011-0323-0200671356</h4></li>
-                  <li><h4 >CCI: 011-323-000200671356-30</h4></li>
+                  <li>
+                    <h4>Número de cuenta: 0011-0323-0200671356</h4>
+                  </li>
+                  <li>
+                    <h4>CCI: 011-323-000200671356-30</h4>
+                  </li>
                 </ul>
                 <h3>Yape o Plin</h3>
                 <ul style="color:#c96897">
-                  <li><h4 >933739970 / 953039564</h4></li>
+                  <li>
+                    <h4>933739970 / 953039564</h4>
+                  </li>
                 </ul>
               </div>
             </div>
           </div>
+        </div>
       </div>
     </div>
-  </div>
     <!-- test -->
 
-        <!-- Hotel Reservation -->
+    <!-- Hotel Reservation -->
     <section class="hotel" id="hotel">
 
-        <div class="container opacity">
-            <h2>Código de Vestimenta</h2>
+      <div class="container opacity">
+        <h2>Código de Vestimenta</h2>
 
-            <p>Queremos que este día, cada uno de ustedes brille con su estilo personal, permitiendo que el ambiente se llene de sofisticación y distinción.</p>
-            <p><strong>Para los caballeros</strong>, les sugerimos usar traje formal, complementado con una corbata, y zapatos de vestir.</p>
-            <p><strong>Para las damas</strong>, les recomendamos lucir hermosos vestidos de cóctel o de gala. Siempre resaltando la elegancia y el glamour de su belleza.</p>
-            <p>Esperamos que el código de vestimenta elegante les inspire a sentirse y lucir maravillosos, mientras celebramos el amor y la unión en este día tan especial. Apreciamos enormemente su presencia y su apoyo, y estamos emocionados de compartir este momento inolvidable con cada uno de ustedes.</p>
+        <p>Queremos que este día, cada uno de ustedes brille con su estilo personal, permitiendo que el ambiente se
+          llene de sofisticación y distinción.</p>
+        <p><strong>Para los caballeros</strong>, les sugerimos usar traje formal, complementado con una corbata, y
+          zapatos de vestir.</p>
+        <p><strong>Para las damas</strong>, les recomendamos lucir hermosos vestidos de cóctel o de gala. Siempre
+          resaltando la elegancia y el glamour de su belleza.</p>
+        <p>Esperamos que el código de vestimenta elegante les inspire a sentirse y lucir maravillosos, mientras
+          celebramos el amor y la unión en este día tan especial. Apreciamos enormemente su presencia y su apoyo, y
+          estamos emocionados de compartir este momento inolvidable con cada uno de ustedes.</p>
 
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
     </section>
     <!-- Hotel Reservation End -->
 
     <!-- Footer -->
     <section class="footer white_txt parallax" id="footer" data-image="http://placehold.it/1920x300">
-        <div class="over"></div>
-        <div class="container">
+      <div class="over"></div>
+      <div class="container">
 
-             <!-- Thanks Text -->
-            <div class="thanks">Contamos con tu Asistencia</div>
-            <div class="footer_txt">
-
-
+        <!-- Thanks Text -->
+        <div class="thanks">Contamos con tu Asistencia</div>
+        <div class="footer_txt">
 
 
-                <!-- Social Buttons -->
-                <!-- <div class="footer_social">
+
+
+          <!-- Social Buttons -->
+          <!-- <div class="footer_social">
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-pinterest"></i></a>
                 </div> -->
 
-                            <div class="title1">Ricardo & Sally</div>
-                <!-- Copyrights -->
-                <!-- <div class="copyrights">2015 Matthew & Mallory - One Page Wedding Template</div> -->
+          <div class="title1">Ricardo & Sally</div>
+          <!-- Copyrights -->
+          <!-- <div class="copyrights">2015 Matthew & Mallory - One Page Wedding Template</div> -->
 
-            </div>
         </div>
+      </div>
 
 
 
@@ -767,17 +856,21 @@
 
 
     <!-- JQuery -->
-	<script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <!-- Zepto -->
+    <script src="js/zepto.min.js"></script>
     <!-- CountDown JS -->
     <script type="text/javascript" src="js/jquery.plugin.min.js"></script>
-	<script type="text/javascript" src="js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="js/jquery.countdown.min.js"></script>
 
- 	<!-- ColorBox JS -->
+    <!-- Vegas JS -->
+    <script src="js/vegas.min.js"></script>
+    <!-- ColorBox JS -->
     <script src="js/jquery.colorbox-min.js"></script>
     <!-- OWL Carousel JS -->
-	<script src="js/owl.carousel.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <!-- Bootstrap JS -->
-	<script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
     <!-- ScrollR JS -->
     <script src="js/skrollr.min.js"></script>
@@ -813,7 +906,8 @@
     </script>
 
 
-</div>
+  </div>
 
 </body>
+
 </html>
