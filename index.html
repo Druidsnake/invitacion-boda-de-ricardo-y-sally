@@ -27,6 +27,8 @@
   <link href="css/pink.css" rel="stylesheet">
   <!-- Vegas CSS -->
   <link href="css/vegas.min.css" rel="stylesheet">
+  <!-- Viewer CSS -->
+  <link href="css/viewer.min.css" rel="stylesheet">
 
 
   <!-- Google Fonts -->
@@ -635,26 +637,26 @@
     </section> -->
     <!-- RSVP End -->
 
-
+    <div id="viewerjs">
     <!-- Gallery -->
     <section class="gallery" id="gallery">
       <h2>Nuestra galería de fotos</h2>
       <div class="gallery_wrapper">
-        <div class="gallery_item">
+        <div class="gallery_item" index="1">
           <div class="gallery_txt">
-            <a href="./images/galeria/01.jpg" title="In late August, on a family vacation to Oahu"><b>Hawaii</b>
+            <a title="In late August, on a family vacation to Oahu"><b>Hawaii</b>
               In late August, on a family vacation to Oahu
             </a>
           </div>
           <img src="./images/galeria/01.jpg" alt="Gallery 1">
         </div>
-        <div class="gallery_item">
+        <div class="gallery_item" index="2">
           <div class="gallery_txt">
-            <a href="http://placehold.it/640x400" title="In Summer 2015"><b>New Zealand</b>
+            <a title="In Summer 2015"><b>New Zealand</b>
               In Summer 2015
             </a>
           </div>
-          <img src="http://placehold.it/640x400" alt="Gallery 2">
+          <img src="./images/galeria/02.jpg" alt="Gallery 1">
         </div>
         <div class="gallery_item">
           <div class="gallery_txt">
@@ -689,6 +691,7 @@
         </div>
       </div>
     </section>
+    </div>
     <!-- Gallery End -->
 
     <!-- Gift Registry -->
@@ -712,7 +715,8 @@
     <!-- Gift Registry End -->
 
     <!-- test -->
-    <div class="accordion" id="accordionExample" style="background-color:rgba(70, 70, 70, 0.2)">
+    <div class="accordion" id="accordionExample"
+      >
       <!-- <div class="accordion-item">
       <div class="container">
           <a class="link" href="" onmouseover="changeCursor(event)" onmouseout="resetCursor(event)"><h2 class="accordion-header" id="regalos">
@@ -855,6 +859,8 @@
     </section>
 
 
+    <!-- Viewer JS -->
+    <script src="js/viewer.min.js"></script>
     <!-- JQuery -->
     <script src="js/jquery-1.11.0.min.js"></script>
     <!-- Zepto -->

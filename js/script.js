@@ -51,10 +51,10 @@
     });
 
 		/*Gallery ColorBox */
-		$('.gallery_txt a').colorbox({
-			rel:'gal',
-			maxWidth:"100%",
-		});
+		// $('.gallery_txt a').colorbox({
+		// 	rel:'gal',
+		// 	maxWidth:"100%",
+		// });
 
 		/*Main Menu Button */
 		$('.main_menu_btn').on("click", function(e){
@@ -126,6 +126,21 @@
 	 		paginationSpeed : 200,	rewindSpeed : 500,	items:3,  itemsTablet: [768,2], autoPlay : true,
 			itemsMobile : [479,1], mouseDrag:false
 		});
+    $('.gallery_item').css("cursor", "pointer")
+
+    $('.gallery_item').click((e) => {
+      const index = e.currentTarget.attributes[1].value
+
+      var viewer = new Viewer(document.getElementById('viewerjs'), {
+        initialViewIndex: index -1,
+        hidden: function () {
+          viewer.destroy();
+        },
+      });
+
+      viewer.show();
+
+    });
 
 		/*Registry Carousel */
 		$(".registry_wrapper").owlCarousel({
