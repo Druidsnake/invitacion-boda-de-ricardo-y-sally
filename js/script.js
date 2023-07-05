@@ -2,10 +2,12 @@
 	"use strict"; // Start of use strict
 
 	$(document).ready(function() {
-		"use strict";
+    "use strict";
 
     /*Wellcome */
     $("body").css("overflow-y", "hidden");
+    // window.scrollTo(0,0)
+    // $("#modal").show();
 
 
 
@@ -26,9 +28,15 @@
     const sonido = cargarSonido("./audio/intro.mp3");
 
     $botonReproducir.onclick = () => {
+      $botonPausar.style.display = "flex"
+      $botonReproducir.style.display = "none"
+      $botonReproducir.style.margin = "10px 20px 0px 0px"
       sonido.play();
     };
     $botonPausar.onclick = () => {
+      $botonPausar.style.display = "none"
+      $botonReproducir.style.display = "flex"
+      $botonReproducir.style.margin = "10px 20px 0px 0px"
       sonido.pause();
     };
     $botonReiniciar.onclick = () => {
@@ -37,17 +45,25 @@
     $("#wellcome").click(() => {
       sonido.play();
       $("body").css("overflow-y", "auto");
+      window.scrollTo(0, 0)
       $("#modal").hide().fast();
     })
 
     /*Vegas BG */
     $("#vegas").vegas({
       slides: [
-        { src: "./images/portada/01.jpg" },
-        { src: "./images/portada/02.jpg" },
-        // { src: "./images/portada.jpg" },
-        // { src: "./images/portada.jpg" }
-      ]
+        { src: "./images/portada/A_R-100.jpg" },
+        { src: "./images/portada/A_R-67.jpg" },
+        { src: "./images/portada/A_R-4.jpg" },
+        { src: "./images/portada/A_R-65.jpg" },
+        { src: "./images/portada/A_R-200.jpg" },
+        { src: "./images/portada/A_R-7.jpg" },
+        { src: "./images/portada/A_R-88.jpg" },
+        { src: "./images/portada/A_R-190.jpg" },
+        { src: "./images/portada/A_R-33.jpg" },
+      ],
+      transition: 'blur',
+      shuffle: true
     });
 
 		/*Gallery ColorBox */
@@ -123,7 +139,7 @@
 		/*Gallery Carousel */
 		$(".gallery_wrapper").owlCarousel({
 	 		navigation : true,	responsive: true, responsiveRefreshRate : 200,	slideSpeed : 200,
-	 		paginationSpeed : 200,	rewindSpeed : 500,	items:3,  itemsTablet: [768,2], autoPlay : true,
+	 		paginationSpeed : 200,	rewindSpeed : 500,	items:6,  itemsTablet: [768,2], autoPlay : true,
 			itemsMobile : [479,1], mouseDrag:false
 		});
     $('.gallery_item').css("cursor", "pointer")
@@ -132,7 +148,27 @@
       const index = e.currentTarget.attributes[1].value
 
       var viewer = new Viewer(document.getElementById('viewerjs'), {
+        title: true,
         initialViewIndex: index -1,
+        title: function (image) {
+          console.log(image);
+          return image.alt;
+        },
+        viewed: function () {
+          var titleElement = document.querySelector('.viewer-title');
+          if (titleElement) {
+            titleElement.style.fontSize = '30px';
+            titleElement.style.fontWeight = 'bold';
+            titleElement.style.position = 'absolute';
+            titleElement.style.top = '-60px';
+            titleElement.style.display = 'block';
+            titleElement.style.left = '0px';
+            titleElement.style.width = '100%';
+            // titleElement.style.transform = 'translateX(-50%)';
+            titleElement.style.color = 'white';
+            titleElement.style.textShadow = '2px 2px 4px rgba(0, 0, 0, 0.8)';
+          }
+        },
         hidden: function () {
           viewer.destroy();
         },

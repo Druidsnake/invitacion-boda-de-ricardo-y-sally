@@ -1658,6 +1658,10 @@ header {
 		width:100%;
 		height:auto;
 		transition:transform 2s;
+    display: block;
+width: auto;
+max-height: 220px;
+margin: 0 auto;
 	}
 	.gallery_item:hover img {
 		transform:scale(1.2)
@@ -1965,13 +1969,17 @@ h1 {
 	}
 /* EDITS */
 #audio {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
+  /* margin-top: 10px;
+  margin-right: 20px; */
   z-index: 10;
+  display: flex !important;
+  flex-direction: row;
 }
 #modal {
-  position: absolute;
+  position: fixed;
   display: flex;
   top: 0;
   left: 0;
@@ -1981,4 +1989,19 @@ h1 {
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+.control-container {
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  /* padding: 5px; */
+  border-radius: 50%;
+  background-color: #000;
+}
+.control-container i {
+  align-self: center;
+}
+.viewer-footer {
+  overflow: visible!important;
 }
