@@ -2055,14 +2055,14 @@ h1 {
   /* Estilos aplicados a pantallas con ancho mínimo de 992px y ancho máximo de 1199px */
   #vegas {
     width:100%;
-    height: 600px !important;
+    height: 100% !important;
     z-index:0
   }
   .into_firefly {
-    height: 600px !important;
+    height: 100% !important;
   }
   .home_intro {
-    height: 600px !important;
+    height: 100% !important;
   }
 }
 @media only screen and (min-width: 1200px) {
