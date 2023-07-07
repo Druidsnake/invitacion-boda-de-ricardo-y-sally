@@ -598,7 +598,7 @@ header {
 				transform-origin:100% 100% 0
 			}
 .married_coundown {
-	font: 400 40px/48px Roboto Condensed ;
+	font: 400 45px/45px Roboto Condensed ;
 	margin: 20px 0 0 0
 }
 	.married_coundown .countdown-section {
@@ -2004,4 +2004,78 @@ h1 {
 }
 .viewer-footer {
   overflow: visible!important;
+}
+
+#wellcome {
+  margin-top: 20px;
+  height: 60;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  padding: 10px 15px 10px 15px;
+  text-align: center;
+  font-family: "Great Vibes";
+  border-radius: 15px;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Estilos aplicados a pantallas con ancho máximo de 767px (pantallas pequeñas) */
+  #vegas {
+    width:100%;
+    height: 400px !important;
+    z-index:0
+  }
+  .into_firefly {
+    height: 400px !important;
+  }
+  .home_intro {
+    height: 400px !important;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* Estilos aplicados a pantallas con ancho mínimo de 768px y ancho máximo de 991px */
+  #vegas {
+    width:100%;
+    height: 500px !important;
+    z-index:0
+  }
+  .into_firefly {
+    height: 500px !important;
+  }
+  .home_intro {
+    height: 500px !important;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Estilos aplicados a pantallas con ancho mínimo de 992px y ancho máximo de 1199px */
+  #vegas {
+    width:100%;
+    height: 600px !important;
+    z-index:0
+  }
+  .into_firefly {
+    height: 600px !important;
+  }
+  .home_intro {
+    height: 600px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* Estilos aplicados a pantallas con ancho mínimo de 1200px (pantallas extra grandes) */
+  #vegas {
+    width:100%;
+    height: 100% !important;
+    z-index:0
+  }
+  .into_firefly {
+    height: 100% !important;
+  }
+  .home_intro {
+    height: 100% !important;
+  }
 }
