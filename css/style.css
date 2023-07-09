@@ -946,7 +946,7 @@ header {
 
 	}
 	.story_img {
-		width: 70%;
+		width: 55%;
 		height: 100%;
 		background-size: cover!important;
 		float: left;
@@ -986,7 +986,7 @@ header {
 	.story_plane {
 		background: #fff;
 		height: 100%;
-		width: 30%;
+		width: 45%;
 		position: relative;
 		z-index: 2;
 		float: left;
@@ -1029,11 +1029,11 @@ header {
 		}
 			.story_img_plane:after {
 				position: absolute;
-				background: #000
-				z-index: 4;
-				width: 10%;
+				background: #000;
+				z-index: 0;
+				width: 0;
 				height: 400px;
-				right: -2px;
+				/* right: -2px; */
 				padding: 0 1px 0 0;
 				border-right:1px solid rgba(255, 255, 255, 0.7);
 				content: "";
@@ -1043,7 +1043,10 @@ header {
 			position: relative;
 			z-index: 4;
 			padding: 30px 0;
-			margin: auto
+			margin: auto;
+      color:#efb810;
+      font-size: 25px;
+      font-family: "Great Vibes";
 		}
 			.story_txt p {
 				position: relative;
@@ -1363,11 +1366,14 @@ header {
 	}
 	.title1 {
 		font:46px/48px Great Vibes;
-    color: '#D4AF37'
+    color:#efb810;
+    text-shadow: 2px 2px 0px #5d4706;
 	}
 		.title1_2 {
 			text-indent:-15px;
-			font:52px/56px Great Vibes;
+			font:56px/56px Great Vibes;
+      color: #efb810;
+      text-shadow: 2px 2px 0px #5d4706;
 		}
 	.title2 {
 		font:56px/60px Roboto Condensed;
@@ -1431,9 +1437,14 @@ header {
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-position: top;
+  display: flex;
 }
 	.footer .container {
-		height: 100%
+		height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 	}
 	.footer .over {
 		width:100%;
@@ -2006,10 +2017,14 @@ h1 {
   overflow: visible!important;
 }
 
+
+
 #wellcome {
   margin-top: 20px;
   height: 60;
   background-color: #fff;
+  color:#efb810;
+  /* text-shadow: 1px 1px 1px #D4AF37; */
   border: none;
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -2025,6 +2040,16 @@ h1 {
 
 @media only screen and (max-width: 767px) {
   /* Estilos aplicados a pantallas con ancho máximo de 767px (pantallas pequeñas) */
+  .title1{
+    font-size: 62px
+  }
+  .title1_2 {
+    font-size: 52px;
+    line-height: 65px;
+  }
+  .story_txt {
+    color: #cd9f12
+  }
   #vegas {
     width:100%;
     height: 400px !important;
@@ -2035,24 +2060,50 @@ h1 {
   }
   .home_intro {
     height: 400px !important;
+  }
+  .footer {
+    height: auto;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* Estilos aplicados a pantallas con ancho mínimo de 768px y ancho máximo de 991px */
+  .title1{
+    font-size: 65px
+  }
+  .title1_2 {
+      font-size: 65px;
+      line-height: 65px;
+  }
+  .story_txt {
+    color: #cd9f12
+  }
   #vegas {
     width:100%;
-    height: 500px !important;
+    height: 600px !important;
     z-index:0
   }
   .into_firefly {
-    height: 500px !important;
+    height: 600px !important;
   }
   .home_intro {
-    height: 500px !important;
+    height: 600px !important;
+  }
+  .footer {
+    height: 500px;
   }
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* Estilos aplicados a pantallas con ancho mínimo de 992px y ancho máximo de 1199px */
+  .title1{
+    font-size: 80px
+  }
+  .title1_2 {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .story_txt {
+    color: #cd9f12
+  }
   #vegas {
     width:100%;
     height: 100% !important;
@@ -2063,10 +2114,21 @@ h1 {
   }
   .home_intro {
     height: 100% !important;
+  }
+  .footer {
+    height: 900px;
   }
 }
 @media only screen and (min-width: 1200px) {
   /* Estilos aplicados a pantallas con ancho mínimo de 1200px (pantallas extra grandes) */
+  .title1{
+    font-size: 100px;
+    line-height: 80px;
+  }
+  .title1_2 {
+    font-size: 80px;
+    line-height: 80px;
+  }
   #vegas {
     width:100%;
     height: 100% !important;
@@ -2077,5 +2139,8 @@ h1 {
   }
   .home_intro {
     height: 100% !important;
+  }
+  .footer {
+    height: 900px;
   }
 }
