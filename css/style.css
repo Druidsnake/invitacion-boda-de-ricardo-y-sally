@@ -539,7 +539,8 @@ header {
 	text-align: center;
 }
 .married .container {
-	padding: 60px 0 0
+	padding: 75px 0 0;
+  margin-bottom: 50px;
 }
 	.married .btn {
 		margin: 30px 0 0
@@ -738,7 +739,7 @@ header {
 	left:0;
 	margin: 30px 0 0 0;
 	background-position: center;
-	background-size: cover
+	background-size: cover;
 }
 	.im1:before, .im2:before {
 		display: block;
@@ -749,6 +750,9 @@ header {
 		border: 15px solid rgba(255,255,255,0.4);
 		border-radius: 50%;
 	}
+  .im1 .im_arrows {
+    transform: rotate(-277deg);
+  }
 .im2 {
 	width: 302px;
 	height:302px;
@@ -760,8 +764,10 @@ header {
 	.im_arrows {
 		position: absolute;
 		width: 100%;
-		height: 100%
+		height: 100%;
+
 	}
+
 	.im_arrows:before {
 		width: 39px;
 		height: 77px;
@@ -780,6 +786,13 @@ header {
 		bottom: -34px;
 		right: 120px
 	}
+    .im2 .im_arrows {
+    width: 505px !important;
+    height: 375px !important;
+    transform: rotate(-838deg);
+    margin: -16px 0px 0px -116px !important;
+    background-size: cover !important;
+  }
 
 
 
