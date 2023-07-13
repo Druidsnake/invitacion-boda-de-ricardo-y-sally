@@ -2157,3 +2157,9 @@ h1 {
     height: 900px;
   }
 }
+.transition-image {
+  /* width: 400px;
+  height: 300px; */
+  /* position: absolute; */
+  transition: opacity 1s ease-in-out;
+}

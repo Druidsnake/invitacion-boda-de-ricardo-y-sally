@@ -46,7 +46,7 @@
       sonido.play();
       $("body").css("overflow-y", "auto");
       window.scrollTo(0, 0)
-      $("#modal").hide().fast();
+      $("#modal").hide();
     })
 
     /*Vegas BG */
@@ -60,6 +60,7 @@
         // { src: "./images/portada/A_R-7.jpg" },
         { src: "./images/portada/A_R-88.jpg" },
         { src: "./images/portada/A_R-190.jpg" },
+        { src: "./images/portada/A_R-52.jpg" },
         { src: "./images/portada/A_R-136.jpg" },
       ],
       transition: 'blur',
