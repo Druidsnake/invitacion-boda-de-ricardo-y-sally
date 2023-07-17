@@ -132,18 +132,19 @@
 
 		/*OWL Carousel in Our Story*/
 		$(".story_wrapper").owlCarousel({
-	 		navigation : true,	responsive: true, responsiveRefreshRate : 200,	slideSpeed : 200,
-	 		paginationSpeed : 200,	rewindSpeed : 500,	items:3,  itemsTablet: [768,1], autoPlay : false,
-			itemsMobile : [479,1], 	itemsDesktopSmall : [980,1],  itemsDesktop : [1500,2], mouseDrag:false
+      navigation: true, responsive: true, responsiveRefreshRate: 300,	slideSpeed : 300,
+      paginationSpeed: 300,	rewindSpeed : 500,	items:3,  itemsTablet: [768,1], autoPlay : 10000,
+      itemsMobile: [479, 1], itemsDesktopSmall: [980, 1], itemsDesktop: [1500, 2], mouseDrag: false, autoplayTimeout: 10000
 		});
 
 		/*Gallery Carousel */
 		$(".gallery_wrapper").owlCarousel({
 	 		navigation : true,	responsive: true, responsiveRefreshRate : 200,	slideSpeed : 200,
-	 		paginationSpeed : 200,	rewindSpeed : 500,	items:6,  itemsTablet: [768,2], autoPlay : true,
+	 		paginationSpeed : 200,	rewindSpeed : 500,	items:4,  itemsTablet: [768,2], autoPlay : true,
 			itemsMobile : [479,1], mouseDrag:false
 		});
     $('.gallery_item').css("cursor", "pointer")
+    $('.gallery_item2').css("cursor", "pointer")
 
     $('.gallery_item').click((e) => {
       const index = e.currentTarget.attributes[1].value
@@ -158,7 +159,40 @@
         viewed: function () {
           var titleElement = document.querySelector('.viewer-title');
           if (titleElement) {
-            titleElement.style.fontSize = '30px';
+            titleElement.style.fontSize = '16px';
+            titleElement.style.fontWeight = 'bold';
+            titleElement.style.position = 'absolute';
+            titleElement.style.top = '-60px';
+            titleElement.style.display = 'block';
+            titleElement.style.left = '0px';
+            titleElement.style.width = '100%';
+            // titleElement.style.transform = 'translateX(-50%)';
+            titleElement.style.color = 'white';
+            titleElement.style.textShadow = '2px 2px 4px rgba(0, 0, 0, 0.8)';
+          }
+        },
+        hidden: function () {
+          viewer.destroy();
+        },
+      });
+
+      viewer.show();
+
+    });
+    $('.gallery_item2').click((e) => {
+      const index = e.currentTarget.attributes[1].value
+
+      var viewer = new Viewer(document.getElementById('viewerjs2'), {
+        title: true,
+        initialViewIndex: index -1,
+        title: function (image) {
+          console.log(image);
+          return image.alt;
+        },
+        viewed: function () {
+          var titleElement = document.querySelector('.viewer-title');
+          if (titleElement) {
+            titleElement.style.fontSize = '16px';
             titleElement.style.fontWeight = 'bold';
             titleElement.style.position = 'absolute';
             titleElement.style.top = '-60px';
@@ -180,10 +214,10 @@
     });
 
 		/*Registry Carousel */
-		$(".registry_wrapper").owlCarousel({
-	 		navigation : true, responsive: true, responsiveRefreshRate : 200, slideSpeed : 200, paginationSpeed : 200,
-			rewindSpeed : 500,	stopOnHover : true, autoHeight : true, items:3, mouseDrag:false, autoPlay : true
-		});
+		// $(".registry_wrapper").owlCarousel({
+	 	// 	navigation : true, responsive: true, responsiveRefreshRate : 200, slideSpeed : 200, paginationSpeed : 200,
+		// 	rewindSpeed : 500,	stopOnHover : true, autoHeight : true, items:3, mouseDrag:false, autoPlay : true
+		// });
 
 		/*The Crew Carousel*/
 		$(".guest_wrapper").owlCarousel({
@@ -192,16 +226,16 @@
 		});
 
 		/*Slider Carousel*/
-		$(".slider").owlCarousel({
-	 		navigation : true, responsive: true, responsiveRefreshRate : 200, slideSpeed : 200,	paginationSpeed : 200,
-			rewindSpeed : 500, stopOnHover : false, autoHeight : true, singleItem:true, mouseDrag:false, autoPlay : true, transitionStyle : "fade"
-		});
+		// $(".slider").owlCarousel({
+	 	// 	navigation : true, responsive: true, responsiveRefreshRate : 200, slideSpeed : 200,	paginationSpeed : 200,
+		// 	rewindSpeed : 500, stopOnHover : false, autoHeight : true, singleItem:true, mouseDrag:false, autoPlay : true, transitionStyle : "fade"
+		// });
 
 		/*Blog Inside*/
-		$(".blog_inside_wrapper").owlCarousel({
-	 		navigation : true, responsive: true, responsiveRefreshRate : 200, slideSpeed : 200,	paginationSpeed : 200,
-			rewindSpeed : 500, stopOnHover : false, autoHeight : true, singleItem:true, mouseDrag:false, autoPlay : true, transitionStyle : "fade"
-		});
+		// $(".blog_inside_wrapper").owlCarousel({
+	 	// 	navigation : true, responsive: true, responsiveRefreshRate : 200, slideSpeed : 200,	paginationSpeed : 200,
+		// 	rewindSpeed : 500, stopOnHover : false, autoHeight : true, singleItem:true, mouseDrag:false, autoPlay : true, transitionStyle : "fade"
+		// });
 
 		/* Top Menu Click to Section */
 		$('.sub_menu').find('a').on("click", function(e){
