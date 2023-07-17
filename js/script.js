@@ -5,6 +5,7 @@
     "use strict";
 
     /*Wellcome */
+    $("body").niceScroll();
     $("body").css("overflow-y", "hidden");
     // window.scrollTo(0,0)
     // $("#modal").show();
@@ -48,6 +49,10 @@
       window.scrollTo(0, 0)
       $("#modal").hide();
     })
+    sonido.addEventListener('ended', function () {
+      this.currentTime = 0;
+      this.play();
+    }, false);
 
     /*Vegas BG */
     $("#vegas").vegas({
